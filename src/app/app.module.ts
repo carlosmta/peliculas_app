@@ -6,11 +6,15 @@ import { HttpModule, JsonpModule } from '@angular/http';
 /* services */
 import { PeliculasService } from './services/peliculas.service';
 
+/* rutas */
+import { approuting } from './app.routes';
+
 /* Components */
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
+import { BuscarComponent } from './components/buscar/buscar.component';
 
 
 @NgModule({
@@ -18,13 +22,15 @@ import { PeliculaComponent } from './components/pelicula/pelicula.component';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    PeliculaComponent
+    PeliculaComponent,
+    BuscarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    JsonpModule
+    JsonpModule,
+    approuting
   ],
   providers: [PeliculasService],
   bootstrap: [AppComponent]
