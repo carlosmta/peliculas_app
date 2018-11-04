@@ -19,7 +19,6 @@ export class PeliculaImagenPipe implements PipeTransform {
               }
     }
 
-    return null;
   }
 
 }
